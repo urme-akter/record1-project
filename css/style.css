@@ -1,0 +1,1096 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+ul,ol{
+    list-style: none;
+}
+a{
+    text-decoration: none;
+}
+.container{
+    width: 1408px;
+    margin: 0 auto;
+}
+/* ===============================
+          Nav-bar start
+=============================== */
+nav{
+    position: absolute;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    width: 100%;
+}
+nav .main{
+    display: flex;
+}
+nav .logo{
+    width: 20%;
+}
+nav .nav-item{
+    width: 60%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+nav .nav-item ul{
+    display: flex;
+    column-gap: 50px;
+}
+nav .nav-item ul li{
+    font-family: 'Open Sans', sans-serif;
+    font-size: 18px;
+    font-weight: 600;
+    color: #29313D;
+}
+nav .nav-item ul li i{
+    display: inline-block;
+    margin-left: 15px;
+}
+nav .button{
+    width: 20%;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+nav .button a{
+    display: inline-block;
+    padding: 14px 28px;
+    background: #FF5538;
+    color: #FFFFFF;
+    font-family: 'Nunito', sans-serif;
+    font-size: 18px;
+    font-weight: 600;
+    border-radius: 18px;
+    border: 1px solid #FF5538;
+    transition: .4s;
+}
+nav .button a:hover{
+    color: #FF5538;
+    background: transparent;
+    
+ }
+/* ===============================
+          Nav-bar end
+=============================== */
+/* ===============================
+          Banner-part start
+=============================== */
+.banner-part{
+    background: url(../images/banner.png);
+    padding: 300px 0;
+    position: relative;
+}
+.banner-part .shape{
+    width: 120px;
+    height: 120px;
+    border: 2px solid #FFABBA;
+    position: absolute;
+    top: 140px;
+    left: 750px;
+    border-radius: 50%;
+    animation: rotate 4s infinite linear;
+}
+.banner-part .shape .round{
+    width: 26px;
+    height: 26px;
+    border: 3px solid transparent;
+    background: #FFABBA;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    border-radius: 50%;
+    
+}
+@keyframes rotate{
+    from{
+       transform: rotate(0);
+    }to{
+        transform: rotate(360deg);
+    }
+}
+.banner-part .dot1{
+    width: 17px;
+    height: 17px;
+    background: #C087EE;
+    position: absolute;
+    top: 224px;
+    left: 1131px;
+    border-radius: 50%;
+    animation: topdown 2s infinite linear alternate;
+}
+@keyframes topdown{
+    from{
+        transform: translateY(-50%);
+    }to{
+        transform: translateY(0);
+    }
+}
+
+.banner-part .dot2{
+    width: 7px;
+    height: 7px;
+    background: #C087EE;
+    position: absolute;
+    top: 135px;
+    left: 1339px;
+    border-radius: 50%;
+    animation: topdown 2s infinite linear alternate;
+}
+.banner-part .dot3{
+    width: 13px;
+    height: 13px;
+    background: #FFDCD8;
+    position: absolute;
+    top: 438px;
+    left: 592px;
+    border-radius: 50%;
+    animation: topdown 2s infinite linear alternate;
+}
+.banner-part .dot4{
+    width: 7px;
+    height: 7px;
+    background: #FFABBA;
+    position: absolute;
+    top: 298px;
+    left: 480px;
+    border-radius: 50%;
+    animation: topdown 2s infinite linear alternate;
+}
+.banner-part .dot5{
+    width: 7px;
+    height: 7px;
+    background: #FFABBA;
+    position: absolute;
+    top: 206px;
+    left: 352px;
+    border-radius: 50%;
+    animation: topdown 2s infinite linear alternate;
+}
+.banner-part .dot6{
+    width: 26px;
+    height: 26px;
+    background: #FFDCD8;
+    position: absolute;
+    top: 570px;
+    left: 141px;
+    border-radius: 50%;
+    animation: topdown 2s infinite linear alternate;
+}
+.banner-part .dot7{
+    width: 13px;
+    height: 13px;
+    background: #FFDCD8;
+    position: absolute;
+    top: 294px;
+    left: 142px;
+    border-radius: 50%;
+    animation: topdown 2s infinite linear alternate;
+}
+.banner-part .tmi img{
+    position: absolute;
+    top: 243px;
+    left: 162px;
+    animation: TDTwo 4s infinite linear alternate;
+}
+@keyframes TDTwo{
+    from{
+        transform: translateY(-10%);
+    }to{
+        transform: translateY(0);
+    }
+}
+.banner-part .ami img{
+    position: absolute;
+    top: 288px;
+    right: 0;
+    animation: TDThree 3s infinite linear alternate;
+}
+@keyframes TDThree{
+    from{
+        transform: translateY(-30%);
+    }to{
+        transform: translateY(0);
+    }
+}
+.banner-part .she img{
+    position: absolute;
+    bottom: 11px;
+    right: 21px;
+    animation: leftright 2s infinite linear alternate;
+}
+@keyframes leftright{
+    from{
+        right: 15px;
+    }to{
+        right: 50px;
+    }
+}
+.banner-part .ring{
+    width: 238px;
+    height: 238px;
+    border: 2px solid #FFDCD8;
+    position: absolute;
+    top: 628px;
+    left: 299px;
+    border-radius: 50%;
+    animation: rotate 4s infinite linear;
+}
+.banner-part .ring img{
+   position: absolute;
+   top: -95px;
+   left: 0;
+}
+.banner-part .cross i{
+    display: inline-block;
+    font-size: 20px;
+    color: #C087EE;
+    position: absolute;
+    top: 375px;
+    left: 1258px;
+    animation: rotate 4s infinite linear;
+}
+.banner-part .cross .markc1{
+    display: inline-block;
+    font-size: 20px;
+    color: #FFABBA;
+    position: absolute;
+    top: 162px;
+    left: 217px;
+    animation: rotate 4s infinite linear;
+}
+.banner-part .cross .markc2{
+    display: inline-block;
+    font-size: 20px;
+    color: #FFDCD8;
+    position: absolute;
+    top: 522px;
+    left: 1124px;
+    animation: rotate 4s infinite linear;
+}
+.banner-part .cross .markc3{
+    display: inline-block;
+    font-size: 20px;
+    color: #FFDCD8;
+    position: absolute;
+    top: 668px;
+    left: 997px;
+    animation: rotate 4s infinite linear;
+}
+.banner-part .cross .markc4{
+    display: inline-block;
+    font-size: 20px;
+    color: #FFDCD8;
+    position: absolute;
+    top: 435px;
+    left: 63px;
+    animation: rotate 4s infinite linear;
+}
+.banner-part h1{
+    font-family: 'Poppins', sans-serif;
+    font-size: 64px;
+    font-weight: 700;
+    width: 771px;
+    text-align: center;
+    margin: 0 auto;
+    line-height: 130%;
+    text-transform: capitalize;
+}
+.banner-part p{
+    font-family: 'Nunito', sans-serif;
+    font-size: 18px;
+    font-weight: 400;
+    width: 547px;
+    text-align: center;
+    margin: 0 auto;
+    margin-top: 24px;
+    margin-bottom: 44px;
+}
+.banner-part .button{
+    text-align: center;
+}
+.banner-part .button a{
+    display: inline-block;
+    padding: 14px 28px;
+    background: #FF5538;
+    color: #FFFFFF;
+    font-family: 'Nunito', sans-serif;
+    font-size: 18px;
+    font-weight: 600;
+    border-radius: 18px;
+    margin: 0 12px;
+    border: 1px solid transparent;
+    transition: .4s;
+}
+.banner-part .button a:hover{
+   color: #FF5538;
+   background: transparent;
+   border-color: #FF5538;
+}
+/* ===============================
+          Banner-part end
+=============================== */
+/* ===============================
+          Service-part start
+=============================== */
+.service-part .box{
+    display: flex;
+    justify-content: space-between;
+}
+.service-part .box .item{
+    width: 25%;
+    background: #FFFFFF;
+    transform: translateY(-50%);
+    padding: 40px;
+    -webkit-box-shadow: 0px 5px 7px 0px rgba(0,0,0,0.13);
+    -moz-box-shadow: 0px 5px 7px 0px rgba(0,0,0,0.13);
+    box-shadow: 0px 5px 7px 0px rgba(0,0,0,0.13);
+}
+.service-part .box .item h3{
+    font-family: 'Poppins', sans-serif;
+    font-size: 28px;
+    font-weight: 600;
+    color: #29313D;
+    margin-top: 34px;
+}
+.service-part .box .item p{
+    font-family: 'Nunito', sans-serif;
+    font-size: 18px;
+    font-weight: 400;
+    margin-top: 16px;
+    line-height: 200%;
+}    
+/* ===============================
+          Service-part end
+=============================== */
+/* ===============================
+      Experience-part start
+=============================== */
+.experience{
+    padding: 100px 0;
+    position: relative;
+}
+.experience .heading h4{
+    font-family: 'Poppins', sans-serif;
+    font-size: 20px;
+    font-weight: 500;
+    color: #FF5538;
+    text-transform: capitalize;
+}
+.experience .heading h2{
+    font-family: 'Poppins', sans-serif;
+    font-size: 48px;
+    font-weight: 600;
+    color: #29313D;
+    text-transform: capitalize;
+    width: 449px;
+    line-height: 67px;
+}
+.experience .main{
+    display: flex;
+    margin-top: 30px;
+}
+.experience .left{
+    width: 50%;
+    z-index: 1
+}
+.experience .left img{
+    width: 115%;
+    position: relative;
+    right: 7px;
+    margin-top: 90px;
+}
+.experience .right{
+    width: 50%;
+    background: url(../images/experience-right.png) no-repeat center;
+    background-size: cover;
+    padding: 100px 198px;
+    position: relative;
+}
+.experience .right h3{
+    font-family: 'Poppins', sans-serif;
+    font-size: 36px;
+    font-weight: 600;
+    color: #29313D;
+    text-transform: capitalize;
+    width: 570px;
+    line-height: 50px;
+}
+.experience .right p{
+    font-family: 'Nunito', sans-serif;
+    font-size: 18px;
+    font-weight: 400;
+    color: #29313D;
+    text-transform: capitalize;
+    width: 479px;
+    line-height: 36px;
+    margin-top: 20px;
+}
+.experience .right .button{
+    margin-top: 48px;
+    width: 181px;
+    height: 64px;
+}
+.experience .right .button a{
+    display: inline-block;
+    color: #FFFFFF;
+    background: #FF5538;
+    padding: 18px 27px;
+    border-radius: 18px;
+    font-family: 'Nunito', sans-serif;
+    font-size: 18px;
+    font-weight: 600;
+    text-transform: capitalize;
+    transition: .4s;
+    border: 1px solid #FF5538;
+}
+.experience .right .button:hover a{
+    background: transparent;
+    color: #FF5538;
+}
+.experience .right .circle{
+    width: 125px;
+    height: 125px;
+    border-radius: 50%;
+    border: 1px solid #FFABBA;
+    position: absolute;
+    top: -7px;
+    left: -192px;
+    animation: rotate 4s infinite linear;
+}
+.experience .right .circle .round{
+    width: 25px;
+    height: 25px;
+    border-radius: 50%;
+    background: #FFABBA;
+    position: absolute;
+    top: -10px;
+    left: 27px;
+}
+.experience .exPic{
+    position: absolute;
+    right: 0;
+    bottom: -100px;
+    animation: janina 3s infinite linear alternate;
+}
+@keyframes janina{
+   from{
+    transform: translateY(-30%);
+   }to{
+    transform: translateY(0);
+   }
+}
+.experience .right .cros{
+    position: absolute;
+    right: 70px;
+    top: -60px;
+    animation: rotate 4s infinite linear;
+}
+.experience .right .cros i{
+   display: inline-block;
+   color: #C087EE;
+   width: 12px;
+   height: 12px;
+
+} 
+/* ===============================
+      Experience-part end
+=============================== */
+/* ===============================
+         Works-part start
+=============================== */
+.works{
+    padding: 50px 0;
+    position: relative;
+}
+.works .ani img{
+    position: absolute;
+    top: -352px;
+    left: 0;
+    animation: TJ 2s infinite linear alternate;
+}
+@keyframes TJ{
+    from{
+     transform: translateY(-1%);
+    }to{
+     transform: translateY(5%);
+    }
+ }
+.works .aniTwo img{
+    position: absolute;
+    top: -92px;
+    left: 14px;
+    animation: TJtwo 3s infinite linear alternate;
+}
+@keyframes TJtwo{
+    from{
+     transform: translateY(0);
+    }to{
+     transform: translateY(80%);
+    }
+ }
+.works .head{
+    display: flex;
+}
+.works .head .left{
+    width: 80%;
+}
+.works .head .left h3{
+    font-family: 'Poppins', sans-serif;
+    font-size: 20px;
+    font-weight: 500;
+    color: #FF5538;
+    text-transform: capitalize;
+}
+.works .head .left h2{
+    font-family: 'Poppins', sans-serif;
+    font-size: 48px;
+    font-weight: 600;
+    color: #29313D;
+    text-transform: capitalize;
+    width: 693px;
+    line-height: 67px;
+    margin-top: 20px;
+}
+.works .head .right{
+    width: 20%;
+    display: flex;
+    justify-content: end;
+    align-items: center;
+}
+.works .head .right .button a{
+    display: inline-block;
+    color: #FF5538;
+    font-family: 'Nunito', sans-serif;
+    font-size: 18px;
+    font-weight: 600;
+    padding: 14px 28px;
+    background: transparent;
+    border: 1px solid #FF5538;
+    border-radius: 18px;
+    transition: .4s;
+}
+.works .head .right .button:hover a{
+    color: #FFFFFF;
+    background: #FF5538;
+    border: 1px solid transparent;
+}
+.works .main{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 60px;
+}
+.works .main .Leftbox{
+    width: 38%;
+    position: relative;
+}
+.works .main .Leftbox img{
+    width: 100%;
+    height: 334px;
+}
+.works .text{
+    width: 100%;
+    padding: 30px;
+    box-sizing: border-box;
+    background: #FFFFFF;
+    position: absolute;
+    bottom: -138px;
+    left: 0;
+    opacity: 0;
+    -webkit-box-shadow: 0px 0px 5px 0px rgba(0,0,0,0.2);
+    -moz-box-shadow: 0px 0px 5px 0px rgba(0,0,0,0.2);
+    box-shadow: 0px 0px 5px 0px rgba(0,0,0,0.2);
+    transition: .4s;
+}
+.works .main .Leftbox:hover .text{
+    bottom: 0;
+    opacity: 1;
+}
+.works .main .Rightbox:hover .text{
+    bottom: 0;
+    opacity: 1;
+}
+.works .main .text h3{
+    font-family: 'Poppins', sans-serif;
+    font-size: 28px;
+    font-weight: 600;
+    color: #29313D;
+}
+.works .main .text a{
+    font-family: 'Nunito', sans-serif;
+    font-size: 18px;
+    font-weight: 500;
+    color: #FF5538;
+    display: inline-block;
+    margin-top: 10px;
+}
+.works .main .Rightbox{
+    width: 58%;
+    position: relative;
+}
+.works .main .Rightbox img{
+    width: 100%;
+    height: 334px;
+}
+/* ===============================
+         Works-part end
+=============================== */
+/* ===============================
+        Counting-part start
+=============================== */
+.counting{
+    background: url(../images/counting-pic.png);
+    background-size: cover;
+    width: 100%;
+    padding: 120px 0;
+    margin-top: 80px;
+    position: relative;
+}
+.counting .main{
+    display: flex;
+    justify-content: space-between;
+}
+.counting .main .left{
+    width: 40%;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+    z-index: 1;
+}
+.counting .main .left .box{
+    width: 47%;
+    padding: 74px 60px;
+    text-align: center;
+    background: #FFFFFF;
+    box-sizing: border-box;
+}
+.counting .main .left .box h3{
+    font-family: 'Poppins', sans-serif;
+    font-size: 40px;
+    font-weight: 600;
+    color: #29313D;
+}
+.counting .main .left .box p{
+    font-family: 'Nunito', sans-serif;
+    font-size: 18px;
+    font-weight: 400;
+    color: #29313D;
+    margin-top: 8px;
+    text-transform: capitalize;
+}
+.counting .main .right{
+    width: 53%;
+}
+.counting .main .right h2{
+    font-family: 'Poppins', sans-serif;
+    font-size: 48px;
+    font-weight: 600;
+    color: #29313D;
+    width: 570px;
+    line-height: 67px;
+}
+.counting .main .right p{
+    font-family: 'Nunito', sans-serif;
+    font-size: 18px;
+    font-weight: 400;
+    color: #29313D;
+    width: 524px;
+    line-height: 36px;
+    margin-top: 20px;
+}
+.counting .main .right .button{
+    margin-top: 64px;
+    width: 181px;
+    height: 64px;
+}
+.counting .main .right .button a{
+   display: inline-block;
+   background: #FF5538;
+   color: #FFFFFF;
+   padding: 18px 27px;
+   font-family: 'Nunito', sans-serif;
+   font-size: 18px;
+   font-weight: 600;
+   text-transform: capitalize;
+   border-radius: 18px;
+   border: 1px solid #FF5538;
+   transition: .4s;
+}
+.counting .main .right .button:hover a{
+   background: transparent;
+   color: #FF5538;
+}
+.counting img{
+    position: absolute;
+    top: 0;
+    right: 0;
+    animation: count 2s infinite linear alternate;
+}
+@keyframes count{
+    from{
+        transform: translateY(-10%);
+    }to{
+        transform: translateY(20);
+    }
+}
+.counting .ring{
+    width: 205px;
+    height: 205px;
+    border: 1px solid #FFDCD8;
+    border-radius: 50%;
+    position: absolute;
+    top: 258px;
+    left: 27px;
+    z-index: 1;
+}
+.counting .dotOne{
+    width: 25px;
+    height: 25px;
+    border-radius: 50%;
+    background: #FFDCD8;
+    position: absolute;
+    top: 358px;
+    left: 108px;
+    animation: topdown 2s infinite linear alternate;
+}
+.counting .dotTwo{
+    width: 17px;
+    height: 17px;
+    border-radius: 50%;
+    background: #C087EE;
+    position: absolute;
+    bottom: 55px;
+    left: 630px;
+    animation: topdown 2s infinite linear alternate;
+}
+.counting .dotThree{
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    background: #FFDCD8;
+    position: absolute;
+    top: 55px;
+    left: 182px;
+    animation: topdown 2s infinite linear alternate;
+}
+.counting .crossO i{
+    display: inline-block;
+    font-size: 24px;
+    color: #FFDCD8;
+    position: absolute;
+    top: 105px;
+    left: 1383px;
+    animation: rotate 2s infinite linear;
+}
+.counting .crossT i{
+    display: inline-block;
+    font-size: 24px;
+    color: #C087EE;
+    position: absolute;
+    top: -73px;
+    right: 85px;
+    animation: rotate 4s infinite linear;
+}
+/* ===============================
+         Counting-part end
+=============================== */
+/* ===============================
+        Companies-part start
+=============================== */
+.companies{
+    padding: 120px 0;
+}
+.companies .heading{
+   text-align: center;
+}
+.companies .heading h2{
+    font-family: 'Poppins', sans-serif;
+    font-size: 48px;
+    font-weight: 600;
+    color: #29313D;
+    width: 849px;
+    line-height: 67px;
+    margin: 0 auto;
+    text-transform: capitalize;
+}
+.companies .box{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 60px;
+}
+.companies .box .item{
+    width: 15%;
+}
+.companies .box .item img{
+    width: 100%;
+}
+/* ===============================
+        Companies-part end
+=============================== */
+/* ===============================
+       Customer-part start
+=============================== */
+.customer{
+    background: url(../images/customer.png) no-repeat center;
+    background-size: cover;
+    padding: 138px 0;
+    position: relative;
+}
+.customer .mark i{
+    position: absolute;
+    top: 541px;
+    left: 26px;
+    display: inline-block;
+    color: #FFDDD7;
+    font-size: 32px;
+    animation: rotate 2s infinite linear;
+}
+.customer .markT i{
+    position: absolute;
+    top: 98px;
+    left: 1568px;
+    display: inline-block;
+    color: #FFDDD7;
+    animation: rotate 2s infinite linear;
+}
+.customer .dot{
+    width: 8px;
+    height: 8px;
+    background: #C087EE;
+    position: absolute;
+    top: 104px;
+    left: 160px;
+    border-radius: 50%;
+    animation: topdown 1s infinite linear alternate;
+}
+.customer .main{
+    display: flex;
+    justify-content: space-between;
+}
+.customer .details{
+    width: 50%;
+}
+.customer .details h2{
+    font-family: 'Poppins', sans-serif;
+    font-size: 48px;
+    font-weight: 600;
+    color: #29313D;
+    text-transform: capitalize;
+}
+.customer .details .boxs{
+    width: 80%;
+    margin-top: 50px;
+    display: flex;
+    justify-content: space-between;
+}
+.customer .details .box{
+    width: 22%;
+}
+.customer .details .box img{
+    border-radius: 18px;
+}
+.customer .details p{
+    font-family: 'Nunito', sans-serif;
+    font-size: 20px;
+    font-weight: 400;
+    color: #29313D;
+    text-transform: capitalize;
+    margin-top: 50px;
+    line-height: 180%;
+}
+.customer .pic{
+    width: 43%;
+}
+.customer .pic img{
+    border-radius: 30px;
+}
+.customer .text{
+    display: flex;
+    margin-top: 60px;
+}
+.customer .name{
+    width: 30%;
+}
+.customer .name h4{
+    font-family: 'Open Sans', sans-serif;
+    font-size: 36px;
+    font-weight: 600;
+    color: #29313D;
+}
+.customer .button i{
+    width: 64px;
+    height: 64px;
+    background: #FFDDD7;
+    display: inline-block;
+    font-size: 20px;
+    color: black;
+    border-radius: 18px;
+    text-align: center;
+    line-height: 64px;
+}
+.customer .button .btn{
+    margin-left: 24px;
+    color: #FFFFFF;
+    background: #FF5538;
+}
+/* ===============================
+        Customer-part end
+=============================== */
+/* ===============================
+        Project-part start
+=============================== */
+.project{
+    background: url(../images/project.png) no-repeat center;
+    background-size: cover;
+    padding: 100px 0;
+    position: relative;
+}
+.project .one img{
+    position: absolute;
+    top: 0;
+    right: 0;
+    animation: pro 4s infinite linear alternate;
+}
+@keyframes pro{
+    from{
+      transform: translateY(-1px);
+    }to{
+        transform: translateY(30px);
+    }
+}
+.project .oneT img{
+    position: absolute;
+    top: 138px;
+    right: 0;
+    animation: leftright 2s infinite linear alternate;
+}
+.project .head{
+    display: flex;
+    position: relative;
+    justify-content: space-between;
+    align-items: center;
+}
+.project .head::after{
+    width: 100%;
+    height: 1px;
+    background: rgb(41, 49, 61, .2);
+    bottom: -50px;
+    left: 0;
+    content: " ";
+    position: absolute;
+}
+
+.project .head .text h4{
+    font-family: 'Poppins', sans-serif;
+    font-size: 20px;
+    font-weight: 400;
+    color: #29313D;
+    text-transform: capitalize;
+}
+.project .head .text h2{
+    font-family: 'Poppins', sans-serif;
+    font-size: 48px;
+    font-weight: 600;
+    color: #29313D;
+    text-transform: capitalize;
+    margin-top: 7px;
+}
+.project .head  .btn a{
+    display: inline-block;
+    background: #FF5538;
+    color: #FFFFFF;
+    font-family: 'Nunito', sans-serif;
+    font-size: 18px;
+    font-weight: 600;
+    padding: 14px 28px;
+    border-radius: 18px;
+    border: 1px solid #FF5538;
+    transition: .4s;
+}
+.project p{
+    font-family: 'Nunito', sans-serif;
+    font-size: 20px;
+    font-weight: 400;
+    color: #29313D;
+    width: 1279px;
+    margin-top: 72px;
+    line-height: 36px;
+    text-transform: capitalize;
+}
+.project .head .btn:hover a{
+     background: transparent;
+     color: #FF5538;
+}
+/* ===============================
+        Project-part end
+=============================== */
+/* ===============================
+        Footer-part start
+=============================== */
+.footer{
+    margin-top: 60px;
+    padding: 100px 0;
+}
+.footer .main{
+   display: flex;
+   justify-content: space-between;
+}
+.footer .main .one{
+    width: 40%;
+}
+.footer .main .one p{
+    font-family: 'Nunito', sans-serif;
+    font-size: 18px;
+    font-weight: 400;
+    color: #29313D;
+    line-height: 32px;
+    width: 449px;
+    text-transform: capitalize;
+    margin-top: 44px;
+}
+.footer .main .two{
+    width: 12%;
+}
+.footer .main .two .heading h3{
+    font-family: 'Open Sans', sans-serif;
+    font-size: 24px;
+    font-weight: 600;
+    color: #29313D;
+}
+.footer .main .two ul{
+    margin-top: 48px;
+}
+.footer .main .two ul li{
+    font-family: 'Nunito', sans-serif;
+    font-size: 20px;
+    font-weight: 600;
+    color: #29313D;
+    line-height: 225%;
+}
+.footer .last-line{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 189px;
+}
+.footer .last-line .textone p{
+    font-family: 'Nunito', sans-serif;
+    font-size: 18px;
+    font-weight: 400;
+    color: #29313D;
+    text-transform: capitalize;
+}
+.footer .last-line .textTwo p{
+    font-family: 'Nunito', sans-serif;
+    font-size: 18px;
+    font-weight: 400;
+    color: #29313D;
+    display: inline-block;
+    text-transform: capitalize;
+}
+.footer .para{
+    margin-right: 40px;
+}
+/* ===============================
+        Footer-part end
+=============================== */
